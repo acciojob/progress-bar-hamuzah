@@ -1,65 +1,52 @@
-body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f5f5f5;
-    }
-    .progress-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 50%;
-      margin: 20px 0;
-      position: relative;
-    }
-    .progress {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background-color: #ddd;
-      z-index: -1;
-    }
-    .progress-bar {
-      height: 100%;
-      background-color: #3498db;
-      width: 0%;
-      transition: width 0.3s ease;
-    }
-    .circle {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: #fff;
-      border: 2px solid #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      z-index: 1;
-    }
-    .circle.active {
-      border-color: #3498db;
-    }
-    .buttons {
-      display: flex;
-      gap: 10px;
-    }
-    .buttons button {
-      padding: 10px 20px;
-      border: none;
-      background-color: #3498db;
-      color: #fff;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .buttons button:disabled {
-      background-color: #ddd;
-      cursor: not-allowed;
-    }
+.sec {
+	background-color: #F6F7FB;
+	width: 800px;
+	height: 300px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+}
+.circle {
+	background-color: white;
+	width: 35px;
+	height: 35px;
+	border: 3px solid #E0E0E0;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.line {
+	width: 50px;
+	border: 3px solid #E0E0E0;
+}
+.active {
+	border: 3px solid #3498DB;
+}
+#prev {
+	background-color: #3498DB;
+	color: white;
+	width: 100px;
+	padding: 13px;
+	margin: 8px;
+	border: none;
+	border-radius: 7px;
+	font-size : 16px;
+}
+#next {
+	background-color: #3498DB;
+	color: white;
+	width: 100px;
+	padding: 13px;
+	margin: 8px;
+	border: none;
+	border-radius: 7px;
+	font-size : 16px;
+}
